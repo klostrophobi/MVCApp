@@ -1,0 +1,39 @@
+﻿@model List<MVCApp.Models.Computer>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<h2>First page of mine</h2>
+<br />
+<br />
+
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Computer ID</td>
+                <td>Computer Name</td>
+                <td>Computer Ram</td>
+                <td>Computer Ram Size</td>
+                <td>Computer GPU</td>
+                <td>Computer GPU Size</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var comp in Model)
+            {
+                <tr>
+                    <td>@comp.CompID</td>
+                    <td>@comp.CompName</td>
+                    <td>@comp.CompRAMName</td>
+                    <td>@comp.CompRAMSize</td>
+                    <td>@comp.CompGPUName</td>
+                    <td>@comp.CompGPUSize</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
