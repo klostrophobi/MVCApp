@@ -4,31 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - My ASP.NET Application</title>
-
-    <link rel="stylesheet" href="~/twitter-bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/Content/Site.css" />
-    <script type="text/javascript" src="~/Scripts/modernizr-2.6.2.js"></script>
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                     @Html.ActionLink("My MVC App", "Index", "Default", new { area = "" }, new { @class = "navbar-brand" })              
-            </div>
-            <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Default")</li>
-                        <li>@Html.ActionLink("About", "About", "Default")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Default")</li>
-                    </ul>
-                </div>
-        </div>
-    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My MVC App</a>
+        </div>  
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Home", "Index", "Default")</li>
+            <li>@Html.ActionLink("About", "About", "Default")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Default")</li>
+        </ul>
+      </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -36,9 +29,5 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/respond.js"></script>
-    @RenderSection("scripts", required: false)
 </body>
 </html>
