@@ -26,6 +26,8 @@ namespace MVCApp
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "Default", template : "{controller=Default}/{action=Index}");

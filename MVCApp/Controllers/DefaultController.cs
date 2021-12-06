@@ -19,7 +19,7 @@ namespace MVCApp.Controllers
                     CompGPUSize=6
                 },
                 new Computer() {
-                    CompID = 1,
+                    CompID = 2,
                     CompName ="Monster Abra A7",
                     CompRAMName ="Kingston HyperX",
                     CompRAMSize=16,
@@ -27,7 +27,7 @@ namespace MVCApp.Controllers
                     CompGPUSize=6
                 },
                 new Computer() {
-                    CompID = 1,
+                    CompID = 3,
                     CompName ="Monster Tulpar T7",
                     CompRAMName ="Kingston HyperX",
                     CompRAMSize=32,
